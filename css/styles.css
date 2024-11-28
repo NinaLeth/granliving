@@ -50,6 +50,7 @@ a:hover{
     display: flex;
     justify-content: center;
     text-align: left;
+    gap: 1%;
 }
 
 .kort{
@@ -79,7 +80,7 @@ a:hover{
 .karrusel {
     display: flex;
     justify-content: center;
-    gap: 10vw;
+    /*gap: 10vw;*/
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden; /* Skjul den synlige scrollbar */
@@ -341,7 +342,6 @@ footer p{
         overflow: visible;
         scroll-snap-type: none;
         width: 100vw;
-        gap: 1%;
     }
 
     .kort{
