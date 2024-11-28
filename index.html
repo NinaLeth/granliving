@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nixie+One&display=swap" rel="stylesheet">
+
+    <title>Gran Living</title>
+</head>
+<body>
+    <header>
+        <!--Her er Navigationen for siden-->
+        <!--latop nav-->
+            <nav>
+                <a href="index.html" id="logo"></a>
+                <div>
+                    <a id="job" href="x">Job hos Gran Living</a>
+                    <a href="x">Praktik</a>
+                    <a href="x">Om Gran Living</a>
+                    <a href="x">Ansvarlighed</a>
+                    <a href="x">Private Label</a>
+                    <a href="x">Kontakt</a>
+                </div>
+                <div id="dk"></div>
+            </nav>
+            <!--tablet og mobil nav / burgermenu-->
+            <div id="mobilnav">
+                <div class="burgermenu-ikon" id="menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <a href="index.html" id="logo_mobil"></a>
+                <div id="dk_mobil"></div>
+
+                <div id="nav_menu" class="menu-indhold">
+                    <div id="burgermenu_indhold">
+                        <div id="burgermenu">
+                            <div><a id="job" href="">Job</a></div>
+                            <div><a href="">Praktik</a></div>
+                            <br>
+                            <div><a href="">Om os</a></div>
+                            <div><a href="">Ansvarlighed</a></div>
+                            <div><a href="">Private Label</a></div>
+                            <br>
+                            <div><a href="">Kontakt</a></div>
+                        </div>
+                    </div>
+                </div>
+       
+    </header>
+    <!--Her er det primære indhold på forsiden-->
+    <main>
+        <div class="video"></div>
+
+        <section>
+            <br><br>
+            <br><br>
+            <h1>Læs om</h1>
+            <h2>Vores arbejde med</h2>
+            <div class="karrusel" id="karrusel1">
+            <div class="treKort">
+            <div class="kort">
+                <a href="x" class="knap">Ena fra Salg</a>
+            </div>
+            <div class="kort">
+                <a href="x" class="knap">Rikke fra Indkøb</a>
+            </div>
+            <div class="kort">
+                <a href="x" class="knap">Sara fra Marketing</a>
+            </div>
+            </div>
+            </div>
+            <div class="prikker" id="prikker1">
+                <span class="prik active" onclick="goToSlide(0)"></span>
+                <span class="prik" onclick="goToSlide(1)"></span>
+                <span class="prik" onclick="goToSlide(2)"></span>
+            </div>
+            
+        </section>
+        
+
+        <section>
+            <br><br>
+            <br><br>
+            <h2>Vores arbejde med</h2>
+            <div class="karrusel" id="karrusel2">
+            <div class="treKort">
+            <div class="kort" id="aytm1">
+                <a href="x" class="knap">AYTM design</a>
+            </div>
+            <div class="kort" id="ansvar">
+                <a href="x" class="knap">Ansvarlighed</a>
+            </div>
+            <div class="kort" id="privatelabel">
+                <a href="x" class="knap">Private Label</a>
+            </div>
+            </div>
+            </div>
+            <div class="prikker" id="prikker2">
+                <span class="prik active" onclick="goToSlide(0)"></span>
+                <span class="prik" onclick="goToSlide(1)"></span>
+                <span class="prik" onclick="goToSlide(2)"></span>
+            </div>
+            
+        </section>
+    </main>
+
+    <!--Her er footeren-->
+    <footer>
+        <div>
+            <p>Polensgade 15</p>
+            <p>8000 Aarhus C</p>
+            <br>
+            <p>mail@granliving.dk</p>
+            <p>+45 8678 2620</p>
+        </div>
+
+        <div class="some_box">
+            <a href="https://www.facebook.com/GranLiving" class="some" id="facebook"></a>
+            <a href="https://www.instagram.com/granliving/" class="some" id="instagram"></a>
+            <a href="https://www.linkedin.com/company/1332951/admin/dashboard/" class="some" id="linkedin"></a>
+            <a href="https://dk.pinterest.com/granliving/" class="some" id="pinterest"></a>
+        </div>
+    </footer>
+</body>
+</html>
