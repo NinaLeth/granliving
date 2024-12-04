@@ -1,6 +1,5 @@
 /*-------GENERELT-------*/
 *{
-    background-color: #DBD7CB;
     font-family: "Lato";
     color:#231F20;
     font-weight: 300;
@@ -8,6 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{ background-color: #DBD7CB;}
 
 main{
     display: flex;
@@ -73,6 +74,18 @@ a:hover{
 
 #privatelabel{
     background-image: url(../images/kande_tegning.png);
+}
+
+#ena{
+    background-image: url(../images/ena.png);  
+}
+
+#rikke{
+    background-image: url(../images/rikke.png);  
+}
+
+#sara{
+    background-image: url(../images/sara.png);  
 }
 
 /* Karrusel container */
@@ -142,7 +155,7 @@ h2{
 nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(219, 215, 203, 0.5);
+    background-color: rgba(219, 215, 203, 0.2);
     align-items: center;
     width: 100vw;
     position: fixed;
@@ -183,9 +196,11 @@ nav div{
 
 /*header mobil/tablet & burgermenu*/ 
 #mobilnav{
+    background-color: rgba(219, 215, 203, 0.2);
     width: 100%;
     top:0;
-    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: flex;
     justify-content: center;
     gap: 30vw;
@@ -193,7 +208,6 @@ nav div{
     position: fixed;
     z-index: 2;
     font-size: 20pt;
-    background-color: transparent;
 }
 
 .burgermenu-ikon {
@@ -247,10 +261,14 @@ nav div{
 }
 
 #burgermenu{
-    width: 70%;
+    background-color: rgba(219, 215, 203, 0.2);
+    width: 100vw;
     padding: 20%;
-    height: 100vh;
-    background-color:transparent;
+    height: 70vh;
+}
+
+#burgermenu div{
+    background-color: transparent;
 }
 
 #nav_menu{
@@ -260,14 +278,16 @@ nav div{
     top:0;
 }
 
+
+
 /*-------SIDER-------*/
 
 /*forside*/
 
 .video{
-    width: auto;
+    width: 100%;
+    max-width: 1920px;
     height: 100vh;
-    top:0;
     z-index: 0;
     overflow: hidden;
 }

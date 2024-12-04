@@ -1,5 +1,6 @@
 const burgerMenu = document.getElementById('menu');
 const nav = document.getElementById("nav_menu");
+const mobilnav = document.getElementById("mobilnav")
 
 // Toggle menuen visning og skjul når burger-menuen klikkes
 burgerMenu.addEventListener('click', () => {
@@ -9,10 +10,23 @@ burgerMenu.addEventListener('click', () => {
     // Hvis menuen er skjult, vis den, ellers skjul den
     if (nav.style.display === "block") {
         nav.style.display = "none";  // Skjul menuen
+        mobilnav.style.backgroundColor = "rgba(219, 215, 203, 0.2)";
+       
     } else {
         nav.style.display = "block"; // Vis menuen
+        mobilnav.style.backgroundColor = "transparent";
     }
+
+    const header = document.getElementById('mobilnav');
+
+    burgermenu.addEventListener('click', () => {
+    header.classList.toggle('open'); // Tilføj eller fjern klassen
+    burgermenu.classList.toggle('active'); // Animer burgerikonet
 });
+});
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     // Funktion for at tilknytte observeren til en karrusel og opdatere prikker
