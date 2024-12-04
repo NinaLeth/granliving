@@ -46,6 +46,15 @@ a:hover{
     color: white;
 }
 
+#kontakt {
+    cursor: pointer;
+    color: #231F20;
+}
+
+#kontakt:hover {
+    color: white;
+}
+
 /*kort*/
 .treKort{
     display: flex;
@@ -129,7 +138,7 @@ h1{
     font-weight:1000;
     -webkit-text-stroke-width: 15px;
     -webkit-text-stroke-color: #231F20;
-    font-size: 150pt;
+    font-size: 100pt;
     text-transform: uppercase;
     margin: 0;
 }
@@ -292,6 +301,49 @@ nav div{
     overflow: hidden;
 }
 
+
+/*404*/
+#fail{
+    background-color: #231F20;
+}
+
+#fail h1, p{
+    color: #DBD7CB;
+    -webkit-text-stroke-color: #DBD7CB;
+    
+}
+
+#fail section{
+    margin-top: 10%;
+}
+
+#lampe{
+    display: flex;
+}
+
+#lampe img{
+    width: 800px;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#lampeknap{
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#lampeknap:hover{
+    color: #231F20;
+    background-color: #231F20;
+}
+
 /*footer*/
 footer{
     margin-top: 10vh;
@@ -415,7 +467,12 @@ footer p{
         width: 60vw;
         scroll-snap-align: start;
     }
+
+    #lampeknap{
+        margin-left: 20vw;
+    }
 }
+
 
 /*mobil*/
 @media screen and (max-width:425px){
@@ -455,4 +512,5 @@ footer p{
     .some_box{
         padding-left: 0;
     }
+    
 }

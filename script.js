@@ -73,3 +73,30 @@ document.addEventListener("DOMContentLoaded", () => {
     initCarousel('karrusel2', 'prikker2');
 });
 
+//404 lampe 
+
+const image = document.getElementById('lampen');
+
+// Definér de to billeder
+const image1 = 'images/lampe3.png'; // Sti til første billede
+const image2 = 'images/lampe_tændt2.png'; // Sti til andet billede
+
+// Variabel til at holde styr på, hvilket billede der vises
+let isImage1 = true;
+
+// Tilføj klik-eventlistener til billedet
+image.addEventListener('click', () => {
+    if (isImage1) {
+        image.src = image2; // Skift til andet billede
+    } else {
+        image.src = image1; // Skift tilbage til første billede
+    }
+    isImage1 = !isImage1; // Skift tilstand
+});
+
+
+function scrollToFooter() {
+    const footer = document.getElementById('footer');
+    footer.scrollIntoView({ behavior: 'smooth' });
+}
+
