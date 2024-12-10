@@ -294,10 +294,8 @@ nav div{
 /*forside*/
 
 .video{
-    width: 100%;
-    max-width: 1920px;
-    height: 100vh;
-    z-index: 0;
+    width: 100vw;
+    height: auto;
     overflow: hidden;
 }
 
@@ -399,11 +397,12 @@ footer p{
 
 #pinterest{
     background-image: url(../images/ikon_pinterest.png);
-    background-color: #231F20;
+   ¢ background-color: #231F20;
 }
 
 
 /*RESPONSIVE*/
+/*Laptop*/
 @media screen and (min-width:1025px){
     #mobilnav{
         display: none;
@@ -429,7 +428,7 @@ footer p{
     }
 }
 
-/*tabel*/
+/*tablet*/
 @media screen and (max-width:1025px){
     nav {
         display: none;
@@ -475,9 +474,6 @@ footer p{
 
 /*mobil*/
 @media screen and (max-width:425px){
-    nav{
-        display: none;
-    }
     
     main{
         padding-top: 8vh;
@@ -485,9 +481,6 @@ footer p{
     }
 
     main section{
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 50px;
         width: 90vw;
     }
 
@@ -495,17 +488,8 @@ footer p{
         margin-right: 0;
     }
 
-
-    .karrusel{
-        overflow-x: auto;
-        display: flex;
-        justify-content: flex-start;
-        scroll-snap-type: x mandatory;
-    }
-
     .kort{
         width: 90vw;
-        scroll-snap-align: start;
     }
 
     .some_box{

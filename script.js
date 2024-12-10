@@ -2,9 +2,8 @@ const burgerMenu = document.getElementById('menu');
 const nav = document.getElementById("nav_menu");
 const mobilnav = document.getElementById("mobilnav")
 
-// Toggle menuen visning og skjul når burger-menuen klikkes
+// Burgermneu vises og skjules når ikonet klikkes
 burgerMenu.addEventListener('click', () => {
-    // Toggling 'active' class på burger-ikonet
     burgerMenu.classList.toggle('active');
 
     // Hvis menuen er skjult, vis den, ellers skjul den
@@ -20,7 +19,7 @@ burgerMenu.addEventListener('click', () => {
     const header = document.getElementById('mobilnav');
 
     burgermenu.addEventListener('click', () => {
-    header.classList.toggle('open'); // Tilføj eller fjern klassen
+    header.classList.toggle('open'); 
     burgermenu.classList.toggle('active'); // Animer burgerikonet
 });
 });
