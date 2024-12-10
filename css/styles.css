@@ -102,14 +102,13 @@ a:hover{
 .karrusel {
     display: flex;
     justify-content: center;
-    /*gap: 10vw;*/
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden; /* Skjul den synlige scrollbar */
+    scrollbar-width: none; /* Skjul scrollbaren på Firefox */
     white-space: nowrap;
     overflow-x: scroll; /* Gør karrusellen scrollbar horisontalt */
     -webkit-overflow-scrolling: touch; /* For glat scroll på mobile enheder */
-    scrollbar-width: none; /* Skjul scrollbaren på Firefox */
 }
 
 .prikker {
@@ -397,7 +396,7 @@ footer p{
 
 #pinterest{
     background-image: url(../images/ikon_pinterest.png);
-   ¢ background-color: #231F20;
+    background-color: #231F20;
 }
 
 

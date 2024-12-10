@@ -1,3 +1,4 @@
+//Burgermenu
 const burgerMenu = document.getElementById('menu');
 const nav = document.getElementById("nav_menu");
 const mobilnav = document.getElementById("mobilnav")
@@ -25,10 +26,9 @@ burgerMenu.addEventListener('click', () => {
 });
 
 
-
-
+//Billedkarrusel
 document.addEventListener("DOMContentLoaded", () => {
-    // Funktion for at tilknytte observeren til en karrusel og opdatere prikker
+    // Funktion for at tilknytte karrusel og prikker sammen
     const initCarousel = (carouselId, dotsId) => {
         const carousel = document.querySelector(`#${carouselId}`);
         const dots = document.querySelectorAll(`#${dotsId} .prik`);
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             },
             {
-                root: carousel, // Indstil observeren til at overvåge karrusellen
+                root: carousel, 
                 threshold: 0.5, // Juster hvor meget af elementet, der skal være synligt
             }
         );
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Gå til slide ved klik på prik
+        // Gå til slide ved klik på prik (hvis man ikke vil scrolle)
         window.goToSlide = (index, carouselId) => {
             const carousel = document.querySelector(`#${carouselId}`);
             const items = carousel.querySelectorAll(".kort");
@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initCarousel('karrusel1', 'prikker1');
     initCarousel('karrusel2', 'prikker2');
 });
+
+
 
 //404 lampe 
 
