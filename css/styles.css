@@ -46,7 +46,7 @@ a:hover{
     color: white;
 }
 
-#kontakt {
+.kontakt {
     cursor: pointer;
     color: #231F20;
 }
@@ -155,7 +155,7 @@ h2{
 
 
 /*header*/
-#job{
+.job{
     font-weight:900;
 }
 
@@ -447,7 +447,7 @@ footer p{
     main section{
         display: flex;
         flex-wrap: wrap;
-        padding-top: 15vh;
+        padding-top: 5vh;
         padding-bottom: 50px;
         width: 60vw;
     }
@@ -475,7 +475,6 @@ footer p{
 @media screen and (max-width:425px){
     
     main{
-        padding-top: 8vh;
         width: auto;
     }
 
@@ -494,5 +493,13 @@ footer p{
     .some_box{
         padding-left: 0;
     }
+
+    h2{
+        font-size: 35pt;
+    }
+
+    .prikker{
+        width: 100vw;
+    } 
     
 }
